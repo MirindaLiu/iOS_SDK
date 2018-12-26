@@ -315,7 +315,7 @@ ALSAdViewDelegate interfaces related to interstitial, for more detail please che
 ```     
 /**
 Get RewardVideo Ad
-First,you must should Call (preloadRewardedVideoAD:delegate:) method get RewardVideo Ad！Then On his return to the success of the proxy method invokes the （showRewardedVideo） method
+First you should call (preloadRewardedVideoAD:delegate:) method get RewardVideo Ad！Then On his return to the success of the proxy method invokes the （showRewardedVideo） method
  	
 @param slot_id         Rewarded Video slot ID
 @param delegate        Set Delegate of Ads event (<ALSRewardVideoDelegate>)
@@ -379,7 +379,7 @@ ALS Reward video is ready to play
 ```
 /**
 Get AppWall ViewController
-First,you should Call preloadAppWall method. Then Call showAppWallViewController method show Appwall.
+You should Call preloadAppWall method. Then Call showAppWallViewController method show Appwall.
 
 @param slot_id       Native AD ID
 @param customColor   If you want set custom UI,you should create ALSCustomColor object
