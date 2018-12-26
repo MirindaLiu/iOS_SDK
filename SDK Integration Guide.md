@@ -241,7 +241,7 @@ Applies SDK supports three ad sizes banner to be used in your APP.
 
 //banner ad
 - (void)ALSLoadBannerSuccess:(ALSADMRAIDView*)adView{
-        
+        [self.view addSubview adView];
 }
 	
 //error while request ads. (share the same error delegate interface with interstitial)
@@ -290,7 +290,7 @@ Call this method before show ad
 ALSAdViewDelegate interfaces related to interstitial, for more detail please check ALSAdViewDelegate in ALSADMRAIDView.h
 //interstitial is ready, call mraidInterstitialShow to show it.
 - (void)ALSLoadInterstitialSuccessWithSlot:(NSString *)slot {
-[[ApplinsSDK shareSDK] showInterstitialAD];
+	[[ApplinsSDK shareSDK] showInterstitialAD];
 }
 
 //error while request ads. (share the same error delegate interface with banner)
@@ -342,6 +342,8 @@ ALS Reward video is ready to play
 
 #RewardVideoDelegate delegate callback interface
 - (void)ALSRewardedVideoLoadSuccess {
+	if([[ApplinsSDK shareSDK] isRewardedVideoReady])
+		[[ApplinsSDK shareSDK] showRewardedVideo];
 	NSLog(@"rewarded vidoe load success, call showRewardedVideo");
 }                       
 - (void)ALSRewardedVideoStart {
