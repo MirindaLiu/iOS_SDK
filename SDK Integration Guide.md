@@ -188,7 +188,7 @@
 -(void)ALSNativeVideoLoadSuccess:(ALSNativeVideoModel *)nativeVideoModel{
 	//save model
 	self.nativeVideoModel = nativeVideoModel
-    	//add mediaview, width:height = 1.77:1
+	//add mediaview, width:height = 1.77:1
     	ALSMediaView *mediaView = [[ALSMediaView alloc] initWithFrame:CGRectMake(x, y, width, width/1.77)];
     	mediaView.WWANPlayEnabled = NO;   //play video via 3g/4g
     	mediaView.autoplayEnabled = YES;  //auto control play/pause
