@@ -9,7 +9,7 @@
   - [Dynamic Interstitial](#interstitial)
   - [Rewarded Video](#rewardedvideo)
   - [AppWall](#Appwall)
-
+- [SDK Demo Download](#sdkDemo)
 ## <a name="start">Prerequisites</a>
 
 - Use Xcode 9.0 or higher
@@ -429,4 +429,11 @@ ALSAppWallDelegate interfaces related to Appwall, for more detail please check A
 */
 -(void)ALSAppWallJumpfail:(ALSNativeAd*)nativeAd;
 
+```
+
+### <a name="sdkDemo">SDK Demo Download</a>
+
+```
+1. [Download SDK Demo](https://github.com/zero-sdk/iOS_SDK/blob/master/ApplinsDemo.zip).
+2. run 'pod update' in Finder.
 ```
