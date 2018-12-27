@@ -19,7 +19,7 @@
 
 **Cocoapods (preferred)**
 
-- Add the following line of code to the project of Podfile file : pod 'Applins' 
+- Add the following line of code to the project of Podfile file : pod 'ApplinsSDK' 
 - Running a 'pod install' command
 
 **Manual download **
