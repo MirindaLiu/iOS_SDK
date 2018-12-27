@@ -190,8 +190,8 @@
 	self.nativeVideoModel = nativeVideoModel
 	//add mediaview, width:height = 1.77:1
     	ALSMediaView *mediaView = [[ALSMediaView alloc] initWithFrame:CGRectMake(x, y, width, width/1.77)];
-    	mediaView.WWANPlayEnabled = NO;   //play video via 3g/4g
-    	mediaView.autoplayEnabled = YES;  //auto control play/pause
+    	mediaView.EnableAutoPlay = NO;   //play video via 3g/4g
+    	mediaView.EnableWWANPlay = YES;  //auto control play/pause
     	[mediaView setNativeVideoAd:nativeVideoModel];
     	[self.view addSubview:self.mediaView];
     	//add title
