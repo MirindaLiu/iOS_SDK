@@ -55,7 +55,7 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   // Initialize Applins SDK
-  [[ApplinsSDK shareSDK] initSDK:@"Your Slot ID"];
+  [[Applins shareSDK] initSDK:@"Your Slot ID"];
   return YES;
 }
 
@@ -290,7 +290,7 @@ Call this method before show ad
 ALSAdViewDelegate interfaces related to interstitial, for more detail please check ALSAdViewDelegate in ALSADMRAIDView.h
 //interstitial is ready, call mraidInterstitialShow to show it.
 - (void)ALSLoadInterstitialSuccessWithSlot:(NSString *)slot {
-	[[ApplinsSDK shareSDK] showInterstitialAD];
+	[[Applins shareSDK] showInterstitialAD];
 }
 
 //error while request ads. (share the same error delegate interface with banner)
@@ -342,8 +342,8 @@ ALS Reward video is ready to play
 
 #RewardVideoDelegate delegate callback interface
 - (void)ALSRewardedVideoLoadSuccess {
-	if([[ApplinsSDK shareSDK] isRewardedVideoReady])
-		[[ApplinsSDK shareSDK] showRewardedVideo];
+	if([[Applins shareSDK] isRewardedVideoReady])
+		[[Applins shareSDK] showRewardedVideo];
 	NSLog(@"rewarded vidoe load success, call showRewardedVideo");
 }                       
 - (void)ALSRewardedVideoStart {
