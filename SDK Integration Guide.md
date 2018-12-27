@@ -432,8 +432,6 @@ ALSAppWallDelegate interfaces related to Appwall, for more detail please check A
 ```
 
 ### <a name="sdkDemo">SDK Demo Download</a>
-
-```
-1. [Download](https://github.com/zero-sdk/iOS_SDK/blob/master/ApplinsDemo.zip).
+1. [Download Demo](https://github.com/zero-sdk/iOS_SDK/blob/master/ApplinsDemo.zip).
 2. Run 'pod update' in Finder.
-```
+
